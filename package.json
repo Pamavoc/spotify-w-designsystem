@@ -13,11 +13,13 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
+    "gsap": "^3.3.0",
     "isotope-cells-by-row": "^1.1.4",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
-    "rough-notation": "^0.3.0"
+    "rough-notation": "^0.3.0",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "webpack": "^4.43.0",
