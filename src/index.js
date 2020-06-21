@@ -5,8 +5,6 @@ import Scrollbar from 'smooth-scrollbar';
 import { ScrollbarPlugin } from 'smooth-scrollbar';
 import Parallax from 'parallax-js';
 
-
-
 var $ = require('jquery');
 var jQueryBridget = require('jquery-bridget');
 var Isotope = require('isotope-layout');
@@ -15,30 +13,22 @@ jQueryBridget( 'isotope', Isotope, $ );
 
 //loading screen 
 
-
-if (document.location.pathname == "/dist/index.html") {
+if (document.location.pathname == "/") {
   
-  setTimeout(function(){ 
-
-    $('#loading').addClass('hidden');
-
-    window.location.href = "/dist/home.html";
-    
-
-  }, 2000);
+  window.setTimeout(function () {
+    location.href = "https://spotify.pamavoc.com/home.html";
+}, 1000);
 
  
 }
 
 
-
-if (document.location.pathname == "/dist/design-system.html" || document.location.pathname == "/dist/philosophy.html" || document.location.pathname == "/dist/branding.html") {
+if (document.location.pathname == "/design-system.html" || document.location.pathname == "/philosophy.html" || document.location.pathname == "/branding.html") {
 const e = document.querySelector('.active');
 const annotation = annotate(e, { type: 'underline' });
 annotation.color = '#1ED65F';
 annotation.show();
 }
-
 
 
 //scrollsmooth
@@ -50,43 +40,43 @@ const scrollbar = Scrollbar.init(document.querySelector('scrollbar'), {
 
 
 
-if (document.location.pathname == "/dist/home.html") {
+//scroll to top
+
+let top = document.querySelector('#top');
+let system = document.querySelector('#system');
+let svg = document.querySelector('footer svg');
+
+
+if (document.location.pathname == "/home.html") {
 
   let arrow = document.body.querySelector('#arrow');
   let scroll1 = document.body.querySelector('#scroll-1');
-  
+  let home = document.querySelector('#home');  
   
   arrow.addEventListener('click', function () {
     scrollbar.scrollIntoView(scroll1);
   });
   
+  svg.addEventListener('click', function () {
+    scrollbar.scrollIntoView(home);
+  });
   
 }
 
-
-
-
-/*
-let damping = 0.01;
-Scrollbar.init(document.querySelector('scrollbar'), damping);
-*/
-
-//scroll to top
-
-let top = document.querySelector('#top');
-let system = document.querySelector('#system');
-
-if (document.location.pathname == "/dist/philosophy.html") {
+if (document.location.pathname == "/philosophy.html") {
 
   top.addEventListener('click', function () {
     scrollbar.scrollIntoView(system);
   });
   
+  svg.addEventListener('click', function () {
+    scrollbar.scrollIntoView(system);
+  });
 }
 
 // parallax js
 
-if (document.location.pathname == "/dist/branding.html") {
+if (document.location.pathname == "/branding.html") {
   
   const scene = document.getElementById('scene');
   const parallaxInstance = new Parallax(scene);
@@ -95,6 +85,9 @@ if (document.location.pathname == "/dist/branding.html") {
     scrollbar.scrollIntoView(system);
   });
 
+  svg.addEventListener('click', function () {
+    scrollbar.scrollIntoView(system);
+  });
 }
 
 
@@ -145,19 +138,7 @@ $('.filter-all').on('click', 'button', function() {
 });
 */
 
-
 //colors generator
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
@@ -173,12 +154,6 @@ let colors = ["#F9CF3D","#F6AB55", "#3E8EF1", "#F26A82", "#509BF5","#A1C3D3", "#
   div.style.backgroundColor = colors[i];
   container.appendChild(div);
   
-
-
-
-
-
-
 
 if (document.location.pathname == "/dist/assets.html" || document.location.pathname == "/dist/philosophy.html" || document.location.pathname == "/dist/branding.html") {
 
@@ -208,12 +183,5 @@ if (document.location.pathname == "/dist/assets.html" || document.location.pathn
     })
 
   })
-
-
-
-
-
-
-
 
 } */
