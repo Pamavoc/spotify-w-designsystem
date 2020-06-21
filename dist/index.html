@@ -15,6 +15,22 @@
         
     </div>
 
-    <script src="bundle.js"></script>
+    <script>
+
+if (document.location.pathname == "/dist/index.html") {
+  
+  setTimeout(function(){ 
+
+    $('#loading').addClass('hidden');
+
+    window.location.href = "/dist/home.html";
+    
+
+  }, 2000);
+
+ 
+}
+
+    </script>
 </body>
 </html>
