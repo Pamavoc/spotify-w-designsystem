@@ -2,7 +2,7 @@
 
 https://spotify.pamavoc.com/
 
-Spotify Design System made by me, Hugo Soares & Simon Gaspar.
+Spotify Design System made by Hugo Soares, Simon Gaspar & myself.
 
 Documentation coming soon.
 
