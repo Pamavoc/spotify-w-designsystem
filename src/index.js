@@ -16,7 +16,19 @@ jQueryBridget( 'isotope', Isotope, $ );
 //loading screen 
 
 
+if (document.location.pathname == "/dist/index.html") {
+  
+  setTimeout(function(){ 
 
+    $('#loading').addClass('hidden');
+
+    window.location.href = "/dist/home.html";
+    
+
+  }, 2000);
+
+ 
+}
 
 
 
