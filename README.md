@@ -10,8 +10,9 @@ Documentation coming soon.
 
 - V1.0 : Website up (actual).
 - V1.1 : Assets optimization to reduce loading time.
-- V1.2 : Real loading screen before the homepage (a placeholder is here at the moment).
-- V1.3 : Red arrow animated.
-- V1.4 : New assets.
-- V1.5 : Page transitions. 
-- V1.6 : Conceptual interfaces sections.
+- V1.2 : Classes to optimize the javascript + dynamic routes with webpack
+- V1.3 : Real loading screen before the homepage (a placeholder is here at the moment).
+- V1.4 : Red arrow animated.
+- V1.5 : New assets.
+- V1.6 : Page transitions. 
+- V1.7 : Conceptual interfaces sections.
