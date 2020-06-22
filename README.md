@@ -16,3 +16,4 @@ Documentation coming soon.
 - V1.5 : New assets.
 - V1.6 : Page transitions. 
 - V1.7 : Conceptual interfaces sections.
+- V1.8 : Dataviz with Spotify API
