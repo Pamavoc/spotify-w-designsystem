@@ -16,4 +16,5 @@ Documentation coming soon.
 - V1.5 : New assets.
 - V1.6 : Page transitions. 
 - V1.7 : Conceptual interfaces sections.
-- V1.8 : Dataviz with Spotify API
+- V1.8 : Dataviz with Spotify API (d3.js).
+- V1.9 : Upgrade the website with Vue.js.
